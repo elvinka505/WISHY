@@ -12,3 +12,6 @@
 # Node / фронт, если появится
 node_modules/
 dist/
+
+.idea/
+.DS_Store
