@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Wishy — твой список желаний</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="header-row">
+        <h1 id="logo">Wishy</h1>
+
+        <button id="theme-toggle" aria-label="Переключить тему" class="theme-btn">🌙</button>
+    </div>
+
+    <p class="subtitle">Твой удобный и стильный список желаний</p>
+
+    <div class="stats">
+        <span id="total-count">Всего: 0</span>
+        <span id="done-count">Выполнено: 0</span>
+        <span id="badge-text"></span>
+    </div>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <form id="wish-form">
+        <input type="text" id="wish-input" placeholder="Добавь желание…" autocomplete="off" required/>
+        <button type="submit">Добавить</button>
+    </form>
+
+    <ul id="wish-list"></ul>
+
+    <button id="clear-done" class="btn-secondary">Очистить выполненные</button>
+
+    <div id="congrats-message" class="hidden">
+        <p>🎉 Поздравляем! Все желания выполнены! 🎉</p>
+        <button id="close-congrats">Спасибо!</button>
+    </div>
+
+    <!-- K-POP -->
+    <div class="kpop-box">
+        <h2>✨ Рекомендация песни на сегодня  ✨</h2>
+
+        <p id="kpop-song">Нажми, чтобы получить милую песню 💗</p>
+
+        <div class="kpop-controls">
+            <button id="kpop-btn" class="btn-secondary">Рекомендовать 🎶</button>
+            <a id="kpop-link" class="listen-btn hidden" href="#" target="_blank">Слушать 💕</a>
+        </div>
+    </div>
+
+</div>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
